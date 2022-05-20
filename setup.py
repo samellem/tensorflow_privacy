@@ -74,7 +74,7 @@ class _BazelBuildCommand(setuptools.Command):
 
   def run(self):
     subprocess.check_call(
-        [self._bazel_cmd, 'run', '-c', 'opt'] +
+        [self._bazel_cmd, 'fetch'] +
         ['//...'],
         # Bazel should be invoked in a directory containing bazel WORKSPACE
         # file, which is the root directory.
