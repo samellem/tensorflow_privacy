@@ -101,6 +101,6 @@ setup(
     ],
     cmdclass={
         'build': _BuildCommand,
-        'bazel_build', _BazelBuildCommand,
+        'bazel_build': _BazelBuildCommand,
     },
     packages=find_packages())
